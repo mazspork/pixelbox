@@ -1,5 +1,6 @@
 // Luises pixel box 1.1a
 // Maz Spork, 2015
+// placed in public domain, do whatever you want :)
 
 // hvis boksen går fra hinanden
 // LILLA er 5V

@@ -11,7 +11,7 @@
 #include <Adafruit_NeoMatrix.h>
 #include <Adafruit_NeoPixel.h>
 
-// the chip only has 2k ram so we need to put the sprites in eeprom
+// the chip only has 2k ram so we need to put the sprites in flash
 #include <avr/pgmspace.h>
 
 #define PIN 6
@@ -32,7 +32,7 @@ Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(16, 16, PIN,
 // get away with 16 colours reducing each image footprint to 128 bytes plus
 // palette data 16x3 bytes = 176 bytes)
 
-// the PROGMEM modifier allows us to place data into the EEPROM part of the arduino
+// the PROGMEM modifier allows us to place data into the 32k flash part of the arduino
 // rather than RAM (which is only a couple of kilobytes), the data must be read
 // by a library function rather than through a pointer for some reason (different
 // segment registers in the ATMEL mpu?)
